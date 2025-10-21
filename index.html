@@ -122,7 +122,47 @@
         <form>
             <div class="campos">
                 <label> Nombre completo </label>
-                <input type="text" name="nombre" placeholder="Nombre completo"/>
+                <input type="text" name="nombre" placeholder="Nombre completo" required />
+            </div>
+            <div class="campos">
+                <label> Email</label>
+                <input type="email" name="correo_electronico" placeholder="ejemploQutcancun.edu.mx" required />
+            </div>
+            <div class="campos">
+                <label> Motivo </label>
+                <select>
+                    <option value="1">contacto</option>
+                    <option>cotizacion</option>
+                    <option>otro</option>
+                </select>
+            </div>
+            <div class="campos">
+                <label> telefono</label>
+                <input type="tel" />
+            </div>
+            <div class="campos">
+                <label> Fecha de evento</label>
+                <input type="date">
+            </div>
+            <div class="campos">
+                <label>numero de empleados</label>
+                <input type="number" />
+            </div>
+            <div class="campos">
+                <label>modo de contacto </label>
+                <input type="checkbox" class="opciones" name="modalidad"><span>whatsapp</span>
+                <input type="checkbox" class="opciones" name="modalidad"><span>correo</span>
+            </div>
+            <div class="campos">
+                <label> eres cliente?</label>
+                <input type="radio" name="es_cliente" value="si"><span>si</span>
+                <input type="radio" name="es_cliente" value="no"><span>no</span>
+            </div>
+            <div class="campos">
+                <label> Fotografia</label>
+                <input type="file" />
+            </div>
+            <div class="campos">
                 <button>Enviar</button>
             </div>
         </form>
