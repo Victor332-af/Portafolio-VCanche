@@ -1,80 +1,119 @@
+/* CONFIGURACIÓN GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* Reset básico */
 * {
     margin: auto;
 }
 
-
-header {
-    background-color: #00eaff;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    border-bottom: solid 10px #1100ff;
-    padding: 50px
+/* Estilo base del cuerpo */
+body {
+    background-color: #0F172A;
+    color: #E2E8F0;
 }
 
+/* ENCABEZADO */
+header {
+    background-color: #1E293B;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    border-bottom: solid 10px #2563EB;
+    padding: 50px;
+}
+
+/* Títulos principales */
 h1 {
     font-family: "Quicksand", sans-serif;
-    color: #f6f6f6;
+    color: #F8FAFC;
 }
 
-h2,
-h3 {
+/* Subtítulos */
+h2, h3 {
     font-family: "Quicksand", sans-serif;
+    color: #E2E8F0;
 }
 
+/* Párrafos */
 p {
-    color: #000000;
+    color: #CBD5E1;
     font-family: "Quicksand", sans-serif;
 }
 
-.bi {
-    color: #cc00ff
-}
-
+/* NAVEGACIÓN PRINCIPAL */
 #menu-principal {
     list-style-type: none;
     display: flex;
-
+    justify-content: center;
+    gap: 60px; /* Espaciado entre enlaces */
 }
 
 nav {
-    overflow: hidden;
-    padding: 20px 0px;
+    background-color: #1E293B;
+    padding: 20px 0;
+    border-bottom: solid 2px #334155;
 }
 
+/* Estilo de los enlaces */
 #menu-principal a {
     text-decoration: none;
-    color: #dd0000;
+    color: #93C5FD;
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: bold;
     padding: 8px;
+    transition: 0.3s;
 }
 
+/* Efecto hover */
 #menu-principal a:hover {
-    color: #642424;
-    background-color: #24d210;
+    color: #FFFFFF;
+    background-color: #2563EB;
+    border-radius: 10px;
 }
 
+/* IMAGEN DE PERFIL */
 #foto-perfil {
-    width: 300px;
+    width: 280px;
     border-radius: 30%;
-    float: right;
+    margin: 20px auto;
+    float: none;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
 }
 
-main {
-    overflow: hidden;
-}
-
+/* SECCIONES GENERALES */
 section {
-    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #F8FAFC;
+    margin-bottom: 15px;
+}
+
+/* Palabra resaltada */
+mark {
+    background-color: #C026D3;
+    color: #FFFFFF;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Texto dentro de secciones */
+section p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* PROYECTOS */
 #proyectos {
     padding: 20px 30px;
-    border-top: solid 5px #10ff03;
-    margin-top: 30px;
+    border-top: solid 5px #2563EB;
+    background-color: #1E293B;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -87,89 +126,101 @@ section {
     margin-top: 20px;
 }
 
+/* Imagen del proyecto */
 .proyecto img {
     width: 90%;
     border-radius: 15px;
     margin-top: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-.proyecto p {
-    text-align: justify;
-    padding: 10px 5px;
-    color: #000000;
-}
-
-.proyecto h3 {
-    color: #000000;
-    font-weight: lighter;
-}
-
+/* HABILIDADES */
 #habilidades {
-    overflow: hidden;
-    margin-top: 10px;
-    padding-bottom: 20px;
-    border-top: solid 5px #e60886;
+    padding: 40px 0;
+    border-top: solid 5px #C026D3;
+    background-color: #1E293B;
+    border-radius: 8px;
+    text-align: center;
     margin-bottom: 30px;
 }
 
-progress {
-    width: 100%;
-    height: 20px;
-    border-radius: 5%;
-    margin: 5px 0px;
-
-}
-
+/* Lista de tecnologías */
 .lista-tecnologias {
-
-    list-style-type: none;
+    list-style: none;
     display: flex;
     justify-content: center;
-    margin-left: 5%;
-    gap: 30px;
-
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 30px auto;
+    padding: 0;
 }
 
+/* Elementos de la lista */
 .lista-tecnologias li {
-    background-color: #1500ff;
-    color: #000000;
-    padding: 12px 40px;
+    background-color: #334155;
+    color: #93C5FD;
+    padding: 15px 50px;
     border-radius: 40px;
-    text-align: center;
-}
-#contacto {
-   padding: 40px;
-}
-.campos{
-    width: 70%;
-    clear: both;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
-.campos label{
-    padding-right: 20px;
+/* Hover en cada habilidad */
+.lista-tecnologias li:hover {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    transform: scale(1.05);
 }
-.campos input, select{
-    padding: 10px;
-    border:solid 2px #520e0e;
-    width: 50%;
-    font-size: 20px;
-    border-radius: 10px;
-}
-.campos button{
-    background-color: #cc00ff;
-    color: #1100ff;
-    border :none;
-    font-size: 10px;
-    padding: 30px 20px;
-    border-radius: 10px;
-}
-.campos .opciones{
-    width: 20px;
-}
-footer {
-    overflow: hidden;
-    padding: 20px 0px;
-    background-color: #685656;
+
+/* CONTACTO */
+   CONTACTO*/
+#contacto {
+    padding: 40px;
+    background-color: #1E293B;
+    border-radius: 8px;
     text-align: center;
-    border-top: solid 10px #ff01ff;
+}
+
+.campos {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.campos input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: solid 2px #475569;
+    background-color: #0F172A;
+    color: #E2E8F0;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botón de envío */
+.campos button {
+    background-color: #C026D3;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.campos button:hover {
+    background-color: #A21CAF;
+}
+
+/* PIE DE PÁGINA */
+   PIE DE PÁGINA*/
+footer {
+    padding: 20px 0;
+    background-color: #1E293B;
+    border-top: solid 10px #C026D3;
+    text-align: center;
+    color: #E2E8F0;
 }
